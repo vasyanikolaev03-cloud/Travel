@@ -1,0 +1,117 @@
+/* Базові налаштування для тіла сторінки (завдання 4 пункт 2, завдання 5 пункт 2) */
+body {
+  margin: 0; /* обнулення відступів */
+  font-family: Arial, sans-serif; /* шрифт Arial */
+  background-color: #f0f0f0; /* для картки профілю */
+}
+
+/* Навігаційна панель (завдання 4) */
+.nav {
+  display: flex; /* вирівнювання в ряд */
+  justify-content: space-between; /* рівні пропуски між блоками */
+  align-items: center; /* по центру по вертикалі */
+  background-color: #333333; /* фон */
+  color: #ffffff; /* текст */
+  padding: 20px; /* внутрішні відступи */
+}
+.logo { font-weight: 700; }
+.nav-links { display: flex; gap: 0; }
+.nav-links-item {
+  text-decoration: none; /* без підкреслення */
+  color: #ffffff; /* білий текст */
+  padding: 10px 15px; /* 10px зверху/знизу, 15px зліва/справа */
+  border-radius: 0; /* початково без заокруглення */
+}
+.nav-links-item:hover {
+  background-color: #575757; /* зміна фону при наведенні */
+  border-radius: 5px; /* заокруглення 5px */
+}
+
+/* Секції для візуального розділення */
+.section { padding: 30px 20px; }
+.section-title { text-align: center; margin: 20px 0; color: #333; }
+
+/* Контейнер та бокси (завдання 1) */
+.centered-rows {
+  height: 30vh; /* демонстраційна висота секції */
+  display: flex;
+  justify-content: center; /* по горизонталі */
+  align-items: center; /* по вертикалі */
+  width: 50%; /* ширина контейнера */
+  margin: 0 auto; /* центрування контейнера */
+  background-color: lightblue; /* фон */
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* 50рх */
+  height: 50px; /* 50рх */
+  background-color: coral; /* фон coral */
+  margin: 10px; /* зовнішні відступи 10рх */
+  font-size: 28px; /* розмір тексту 28рх */
+  color: #ffffff; /* білий текст */
+}
+
+/* Завдання 2: контейнер з рівним простором між елементами */
+.spaced {
+  display: flex;
+  justify-content: space-between; /* рівні пропуски між елементами */
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  background-color: lightgreen;
+  padding: 20px; /* внутрішні відступи 20рх */
+}
+
+/* Завдання 3: елементи у стовпчик і по центру */
+.column {
+  display: flex;
+  flex-direction: column; /* у стовпчик */
+  justify-content: center; /* по вертикалі */
+  align-items: center; /* по горизонталі */
+  width: 200px; /* ширина контейнера 200рх */
+  margin: 0 auto;
+  background-color: lightyellow;
+  padding: 20px; /* внутрішні відступи 20рх */
+}
+
+/* Завдання 5: картка профілю */
+.profile-card {
+  display: flex;
+  flex-direction: column; /* у стовпчик */
+  align-items: center; /* по центру */
+  background-color: #ffffff; /* білий фон */
+  color: #ffffff; /* колір тексту білий (за умовою завдання 5 п.3) */
+  padding: 30px 20px; /* 30рх зверху/знизу, 20рх зліва/справа */
+  width: 300px; /* ширина контейнера 300рх */
+  margin: 0 auto; /* центрування */
+  border-radius: 10px; /* заокруглення 10рх */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* тінь */
+}
+.profile-image {
+  width: 100px; /* 100рх */
+  height: 100px; /* 100рх */
+  border-radius: 50%; /* 50% */
+  margin-top: 20px; /* зовнішній відступ зверху */
+  object-fit: cover; /* збереження пропорцій */
+}
+.profile-info {
+  display: flex;
+  flex-direction: column; /* у стовпчик */
+  align-items: center; /* по центру */
+  text-align: center; /* вирівнювання тексту по центру */
+}
+.profile-name {
+  margin: 0; /* обнулити відступи */
+  font-size: 28px; /* 28рх */
+  color: #333333; /* колір заголовка */
+}
+.profile-description {
+  font-size: 14px; /* 14рх */
+  color: #777777; /* колір абзацу */
+  margin: 10px 0; /* зверху/знизу по 10рх */
+}
+.social-links { display: flex; margin-top: 20px; }
+.social-link { color: #007bff; text-decoration: none; padding: 0 10px; }
+.social-link:hover { text-decoration: underline; }
